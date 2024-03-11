@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Tela de Login</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #201b2c;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+    }
+    
+    .container {
+      width: 60%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      padding: 30px 35px;
+      background: #2f2841;
+      border-radius: 20px;
+      box-shadow: 0px 10px 40px #00000056;
+    }
+    
+    .logo {
+      width: 35vw;
+      margin-bottom: 20px;
+      box-shadow: 2px;
+    }
+    
+    .bnt-login2 {
+      border: none;
+      border-radius: 15px;
+      padding: 10px 20px;
+      background-color: #00ff88;
+      color: #201b2c;
+      font-size: 14px;
+      font-weight: 600;
+      cursor: pointer;
+    }
+    
+    .bnt-login2:hover {
+      background-color: #00cc77;
+    }
+    
+    .container h2 {
+      text-align: center;
+      margin: 0;
+      color: #00ff88;
+      font-weight: 800;
+    }
+    
+    .textfield {
+      margin: 10px 0;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+    }
+    
+    .textfield > input {
+      width: 100%;
+      border: none;
+      border-radius: 10px;
+      padding: 15px;
+      background: #514869;
+      color: #f0ffffde;
+      font-size: 12pt;
+      box-shadow: 0px 10px 40px #00000056;
+      outline: none;
+      box-sizing: border-box;
+    }
+    
+    .textfield > label {
+      color: #f0ffffde;
+      margin-bottom: 10px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <img src="img/svg/logo.svg" class="logo" alt="Logo.svg">
+    <h2>Login</h2>
+    <div class="textfield">
+      <label for="Usuario">Usuário</label>
+      <input type="text" name="Usuario" placeholder="Usuário">
+    </div>
+    <div class="textfield">
+      <label for="senha">Senha</label>
+      <input type="password" name="Senha" placeholder="Senha" required>
+    </div>
+    <input type="submit" value="Entrar" class="bnt-login2">
+  </div>
+</body>
+</html>
